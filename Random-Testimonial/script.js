@@ -8,4 +8,7 @@ let quotesArray = [
     'NAPS is doing the hard work of helping people get the rest they need. — U.S. News'
 ];
 
-letRandomQuotes = quotesArray[Math.floor(Math.random()*quotesArray.length)]
+let randomNumber = Math.floor(Math.random()*quotesArray.length)
+document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '”' + " — " +quotesArray[randomNumber].split(' — ')[1]
+
+//console.log(quotesArray[randomNumber].split(' — ')[0])
